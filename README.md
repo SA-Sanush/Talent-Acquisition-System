@@ -1,49 +1,55 @@
+
 # Talent Acquisition System
 
-A modern and innovative ICT main project focused on solving real-world problems through technology. This project integrates efficient system design, user-friendly interfaces, and scalable development practices to deliver a reliable and impactful solution. Built with performance, functionality, and simplicity in mind, the project demonstrates practical implementation of software engineering concepts and modern development technologies.
+Talent Acquisition System is a Flask-based web application that analyzes resumes and provides a structured recruitment score, criteria breakdown, and job recommendations. Users can upload resumes in PDF, DOCX, or TXT format, optionally add a target job title and job description, and receive a tailored match analysis based on extracted skills and resume content.
 
-## 🚀 Features
+## Features
 
-* Responsive and user-friendly interface
-* Secure and efficient system architecture
-* Real-time functionality and optimized performance
-* Scalable and maintainable code structure
-* Modern UI/UX design principles
-* Database integration and data management
+- Resume upload and parsing for PDF, DOCX, and TXT files
+- Skill and keyword extraction from resume content
+- Target job matching using title and job description
+- TAS match score with criteria-based breakdown
+- Job recommendation support using predefined job data
+- Secure upload handling with temporary file cleanup
+- SQLite-based report storage
+- Responsive and user-friendly web interface
 
-## 🛠️ Technologies Used
+## Technologies Used
 
-* Frontend: HTML, CSS, JavaScript
-* Backend: Java / Python / Node.js 
-* Database: MySQL / MongoDB 
-* Tools & Platforms: Git, GitHub, VS Code
+- Python
+- Flask
+- HTML, CSS, JavaScript
+- SQLite
+- Pandas, NumPy
+- pypdf / PyPDF2
+- python-docx
+- spaCy
+- pytesseract and pdf2image for optional OCR support
 
-## 📌 Project Objective
+## Project Objective
 
-The main objective of this project is to develop a smart and efficient solution that addresses practical challenges using Information and Communication Technology while enhancing usability, performance, and accessibility.
+The objective of this project is to simplify and improve the recruitment screening process by using resume parsing, keyword analysis, and job matching techniques. It helps candidates and recruiters quickly understand how well a resume aligns with a target role.
 
-## ⚙️ Installation
+## Installation
 
 ```bash
 git clone https://github.com/SA-Sanush/Main_Project_ICT.git
 cd Main_Project_ICT
+pip install -r requirements.txt
 ```
 
-## ▶️ Run the Project
-
-*Add your run instructions here based on the technology used.*
-
-Example:
+## Run the Project
 
 ```bash
-npm install
-npm start
+python app.py
 ```
 
-## 🤝 Contributors
+Then open the local Flask URL in your browser.
 
-* [SA-Sanush GitHub Profile](https://github.com/SA-Sanush?utm_source=chatgpt.com)
+## Author
 
-## 📄 License
+Developed by [SA-Sanush] and Team (https://github.com/SA-Sanush)
+
+## License
 
 This project is created for educational and academic purposes.

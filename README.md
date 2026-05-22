@@ -14,8 +14,8 @@ A modern and innovative ICT main project focused on solving real-world problems 
 ## 🛠️ Technologies Used
 
 * Frontend: HTML, CSS, JavaScript
-* Backend: Java / Python / Node.js *(edit based on your stack)*
-* Database: MySQL / MongoDB *(edit if needed)*
+* Backend: Java / Python / Node.js 
+* Database: MySQL / MongoDB 
 * Tools & Platforms: Git, GitHub, VS Code
 
 ## 📌 Project Objective

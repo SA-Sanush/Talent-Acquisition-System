@@ -1,47 +1,53 @@
 # Talent Acquisition System
 
-A Flask web app that scans resumes, scores them against common TAS criteria, compares them with an optional target job description, recommends matching roles, and stores scan history for logged-in users.
+A modern and innovative ICT main project focused on solving real-world problems through technology. This project integrates efficient system design, user-friendly interfaces, and scalable development practices to deliver a reliable and impactful solution. Built with performance, functionality, and simplicity in mind, the project demonstrates practical implementation of software engineering concepts and modern development technologies.
 
-## Features
+## 🚀 Features
 
-- Upload resumes as PDF, DOCX, or TXT files.
-- Extract resume text and score contact info, summary, work experience, education, skills, TAS optimization, consistency, proofreading, file format, and relevance.
-- Paste a target job title and job description for role-specific relevance matching.
-- View matched and missing keywords for the target role and built-in sample roles.
-- Register, log in, and review saved scan history.
-- Download saved scan reports as PDF files.
-- Admin users can add recommendation catalog roles and review contact messages.
-- Submit contact/support messages.
-- Temporary upload handling: uploaded files are removed after parsing.
-- Optional OCR fallback for scanned PDFs when Tesseract and Poppler are installed locally.
+* Responsive and user-friendly interface
+* Secure and efficient system architecture
+* Real-time functionality and optimized performance
+* Scalable and maintainable code structure
+* Modern UI/UX design principles
+* Database integration and data management
 
-## Tech Stack
+## 🛠️ Technologies Used
 
-- Python
-- Flask
-- SQLite
-- Pandas and NumPy
-- pypdf
-- python-docx
-- spaCy, optional model support
-- Local canvas chart rendering
-- Optional pytesseract and pdf2image OCR support
+* Frontend: HTML, CSS, JavaScript
+* Backend: Java / Python / Node.js *(edit based on your stack)*
+* Database: MySQL / MongoDB *(edit if needed)*
+* Tools & Platforms: Git, GitHub, VS Code
 
-## OCR for Scanned PDFs
+## 📌 Project Objective
 
-The app can analyze scanned/image-based PDFs when OCR is installed.
+The main objective of this project is to develop a smart and efficient solution that addresses practical challenges using Information and Communication Technology while enhancing usability, performance, and accessibility.
 
-Install the Python packages from `requirements.txt`, then install these system tools:
+## 📷 Screenshots
 
-- Tesseract OCR
-- Poppler
+*Add project screenshots here*
 
-If they are not available on your system `PATH`, set:
+## ⚙️ Installation
 
-```powershell
-$env:TESSERACT_CMD="C:\Program Files\Tesseract-OCR\tesseract.exe"
-$env:POPPLER_PATH="C:\path\to\poppler\Library\bin"
-python app.py
+```bash
+git clone https://github.com/SA-Sanush/Main_Project_ICT.git
+cd Main_Project_ICT
 ```
 
-Normal selectable-text PDFs, DOCX, and TXT files do not need OCR.
+## ▶️ Run the Project
+
+*Add your run instructions here based on the technology used.*
+
+Example:
+
+```bash
+npm install
+npm start
+```
+
+## 🤝 Contributors
+
+* [SA-Sanush GitHub Profile](https://github.com/SA-Sanush?utm_source=chatgpt.com)
+
+## 📄 License
+
+This project is created for educational and academic purposes.

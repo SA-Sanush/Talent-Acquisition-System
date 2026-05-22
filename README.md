@@ -22,10 +22,6 @@ A modern and innovative ICT main project focused on solving real-world problems 
 
 The main objective of this project is to develop a smart and efficient solution that addresses practical challenges using Information and Communication Technology while enhancing usability, performance, and accessibility.
 
-## 📷 Screenshots
-
-*Add project screenshots here*
-
 ## ⚙️ Installation
 
 ```bash

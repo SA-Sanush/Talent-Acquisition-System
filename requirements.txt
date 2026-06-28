@@ -7,3 +7,4 @@ spacy
 pytest
 pytesseract
 pdf2image
+gunicorn

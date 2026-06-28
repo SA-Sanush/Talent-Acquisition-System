@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: talent-acquisition-system
+    runtime: docker
+    plan: starter # Starter plan is required if mounting a persistent disk. Change to 'free' if you do not want a disk.
+    envVars:
+      - key: DATABASE_PATH
+        value: /data/tas_reports.db
+      - key: UPLOAD_FOLDER
+        value: /data/uploads
+      - key: FLASK_ENV
+        value: production
+      - key: FLASK_SECRET_KEY
+        generateValue: true # Render will automatically generate a secure 256-bit secret key.
+    disk:
+      name: tas-data
+      mountPath: /data
+      sizeGB: 1

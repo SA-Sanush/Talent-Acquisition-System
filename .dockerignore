@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Git
+.git
+.gitignore
+
+# Environment/Local config
+.env
+.env.*
+.vscode/
+
+# Local databases and ephemeral directories
+tas_reports.db
+uploads/
+static/images/
+
+# Deployment configurations themselves can be ignored, but copying them doesn't hurt.
+Dockerfile
+.dockerignore
+render.yaml

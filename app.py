@@ -50,10 +50,10 @@ except ImportError as exc:  # OCR is optional because it needs native Poppler bi
     OCR_IMPORT_ERRORS["pdf2image"] = str(exc)
 
 BASE_DIR = Path(__file__).resolve().parent
-UPLOAD_FOLDER = BASE_DIR / "uploads"
+UPLOAD_FOLDER = Path(os.environ.get("UPLOAD_FOLDER", str(BASE_DIR / "uploads")))
 CHART_FOLDER = BASE_DIR / "static" / "images"
 JOB_DATA_PATH = BASE_DIR / "job_data.csv"
-DB_PATH = BASE_DIR / "tas_reports.db"
+DB_PATH = Path(os.environ.get("DATABASE_PATH", str(BASE_DIR / "tas_reports.db")))
 ALLOWED_EXTENSIONS = {"pdf", "txt", "docx"}
 RATE_LIMITS: dict[tuple[str, str], list[float]] = {}
 _DB_READY = False
@@ -147,7 +147,7 @@ app.config.update(
     SESSION_COOKIE_SECURE=os.environ.get("FLASK_ENV") == "production",
 )
 
-UPLOAD_FOLDER.mkdir(exist_ok=True)
+UPLOAD_FOLDER.mkdir(parents=True, exist_ok=True)
 CHART_FOLDER.mkdir(parents=True, exist_ok=True)
 
 CONTACT_PATTERN = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}|\+?\d[\d\s().-]{6,}\d")
